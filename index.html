@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="themeToggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+
+  <div class="stopwatch-container">
+    <h1>Stopwatch</h1>
+    
+    <div class="dial">
+      <div class="time" id="timeDisplay">00:00.00</div>
+      <p class="total-label">Total Time</p>
+    </div>
+
+    <div class="controls">
+      <button id="lapBtn" title="Record a lap">🏁</button>
+      <button id="startPauseBtn" title="Start/Pause">▶</button>
+      <button id="resetBtn" title="Reset">⟳</button>
+    </div>
+
+    <div class="laps-section">
+      <h2>Laps</h2>
+      <p class="laps-description">Individual lap times recorded during your stopwatch session</p>
+      <div class="laps" id="laps"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
